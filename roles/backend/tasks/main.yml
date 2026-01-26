@@ -19,9 +19,10 @@
     name: comman
     tasks_from: app-pre-req.yml
 
-# - name: create expense user
-#   ansible.builtin.user: # hetrogenious used for all distros
-#     name: expense
+- name: create expense user
+  ansible.builtin.user: # hetrogenious used for all distros
+    name: expense
+    
 # - name: create a app directory
 #   ansible.builtin.file:
 #     path: /app
