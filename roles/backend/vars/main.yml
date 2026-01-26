@@ -1,3 +1,4 @@
 login_user: root
 login_host: db.janakiraodevopsapps.fun
 mysql_root_password: ExpenseApp@1
+DB_HOST: db.janakiraodevopsapps.fun
