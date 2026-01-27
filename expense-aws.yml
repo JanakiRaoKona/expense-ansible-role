@@ -1,0 +1,17 @@
+- name: create ec2 instances and route 53 records for expense app 
+  host: localhost
+  vars:
+    zone: janakiraodevopsapps.fun
+  tasks:
+    - name: create ec2 instances 
+      amazon.aws.ec2_instance:
+        name: "{{ item }}"
+        security_group: allow-everything 
+        image_id: ami-0220d79f3f480ecf5
+        tags:
+          Name: "{{ item }}"
+      loop:
+        - db
+        - be
+        - ui
+      register: ec2_instance_info  
