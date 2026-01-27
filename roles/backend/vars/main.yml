@@ -4,5 +4,3 @@ mysql_root_password: ExpenseApp@1
 DB_HOST: db.janakiraodevopsapps.fun
 app_location: /app
 component: backend
-ansible_user: ec2_user 
-ansile_password: DevOps321
