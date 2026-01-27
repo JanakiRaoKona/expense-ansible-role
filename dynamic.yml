@@ -2,7 +2,7 @@
   hosts: all 
   become: yes 
   tasks:
-    - name: install prefix 
+    - name: install npm
       ansible.builtin.dnf:
-        name: prefix 
+        name: npm 
         state: latest 
