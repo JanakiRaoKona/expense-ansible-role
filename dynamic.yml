@@ -1,0 +1,8 @@
+- name: install dynamic Dependencies
+  hosts: all 
+  become: yes 
+  tasks:
+    - name: install prefix 
+      ansible.builtin.dnf:
+        name: prefix 
+        state: latest 
